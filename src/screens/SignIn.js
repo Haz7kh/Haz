@@ -4,8 +4,6 @@ import { Button, StyleSheet, Text, TextInput, View,Image } from 'react-native';
 
 
 const SignIn=()=> {
-  
- 
   var TextInputValue="";
   const handleChangeText = () => console.log(TextInputValue)
   
@@ -35,7 +33,7 @@ const SignIn=()=> {
      style={{width:200,height:20, backgroundColor:"#e6ffff",margin:10}} ></TextInput>
      
      <Button title="sign in" >
-
+   
 </Button>
 
       </View>
