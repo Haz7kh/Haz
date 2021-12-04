@@ -33,7 +33,7 @@ const HomeScreen = ({ navigation }) => {
       <Button
         onPress={() => navigation.navigate('CrypF')}
         
-        title="Crypto currenci"
+        title="Crypto currency"
       />
       
        
