@@ -158,7 +158,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#514F59",
     justifyContent: "space-around",
-    width: "100%",
+    width: 400,
+    height:600,
+    
     padding: "20px",
   },
   image: {
