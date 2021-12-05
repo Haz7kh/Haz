@@ -19,14 +19,30 @@ const HomeScreen = ({ navigation }) => {
      
      
       
-    <View style={{height:200,width:400,border:2}}>
+    <View style={{height:200,width:200,border:2}}>
       <Button
         onPress={() => navigation.navigate('CrypF')}
         
-        title="Crypto currency"
+        title="Crypto currency" color={randomRGB()}
       />
-      
-       
+
+
+<Button
+        onPress={() => navigation.navigate('LandEl')}
+        
+        title="SUBSCRIBE" color={randomRGB()}
+      />
+
+<Button
+        onPress={() => navigation.navigate('contactEl')}
+        
+        title="CONTACT" color={randomRGB()}
+      />
+
+    </View>
+
+    
+    <View>
     </View>
     
       <Button
@@ -35,7 +51,7 @@ const HomeScreen = ({ navigation }) => {
           setColor([...color,randomRGB()])
         }}
         
-        title="change the back ground"
+        title="change the back ground" color={randomRGB()}
       />
       <View style={styles.textAbout}>
       <TouchableOpacity 
@@ -69,9 +85,8 @@ const styles = StyleSheet.create({
     marginTop:0,
     borderWidth:1,
     padding:10,
-    marginLeft:0,
-    marginBottom:0,
-    backgroundColor:"#9aa8b5",
+    
+   
 
     
     
