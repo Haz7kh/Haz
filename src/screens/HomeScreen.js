@@ -5,10 +5,11 @@ import { useState } from 'react';
 const HomeScreen = ({ navigation }) => {
   const [color, setColor] = useState([]);
   return (
-    <View style={{backgroundColor:randomRGB(),width:400,height:600}}>
+    //header and the Image
+    <View style={{backgroundColor:randomRGB(),width:400,height:650}}>
       <View style={styles.textHome}>
       <Text style={{fontSize: 20,
-    fontWeight:"bold",}}>Home</Text>
+    fontWeight:"bold",}}>MY APP</Text>
       </View>
        <Image
         style={{width:400,height:200,alignItems:"center",marginTop:-5}}
@@ -17,7 +18,7 @@ const HomeScreen = ({ navigation }) => {
         }}
       />
      
-     
+     <Text> THE MENU:</Text>
       
     <View style={{height:200,width:200,border:2}}>
       <Button
@@ -34,9 +35,21 @@ const HomeScreen = ({ navigation }) => {
       />
 
 <Button
+        onPress={() => navigation.navigate('AddBlohE2')}
+        
+        title="Add Blog" color={randomRGB()}
+      />
+
+<Button
         onPress={() => navigation.navigate('contactEl')}
         
         title="CONTACT" color={randomRGB()}
+      />
+
+<Button
+        onPress={() => navigation.navigate('ContactE2')}
+        
+        title="CONTACT2" color={randomRGB()}
       />
 
     </View>
@@ -44,15 +57,17 @@ const HomeScreen = ({ navigation }) => {
     
     <View>
     </View>
-    
-      <Button
-      style={styles.btn}
+    <View style={styles.btn}>
+    <Button
         onPress={() => {
           setColor([...color,randomRGB()])
         }}
         
         title="change the back ground" color={randomRGB()}
       />
+      
+    </View>
+     
       <View style={styles.textAbout}>
       <TouchableOpacity 
          onPress ={()=> navigation.navigate('About')}
@@ -106,12 +121,11 @@ const styles = StyleSheet.create({
   btn:{
    
     
-    width:400,
+    width:200,
    height:80,
-    marginBottom:40,
-    marginLeft:120,
-    alignItems:"center",
-   justifyContent:"center",
+   marginTop:20,
+   
+    
      
     
   }

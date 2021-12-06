@@ -158,8 +158,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#514F59",
     justifyContent: "space-around",
-    width: 400,
-    height:600,
+    width:"100%",
+    
     
     padding: "20px",
   },

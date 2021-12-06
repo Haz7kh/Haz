@@ -6,6 +6,8 @@ import AboutUs from './src/screens/AboutUs';
 import CryptoCurrencies from './src/screens/CryptoCurrencies';
 import LandingP from './src/screens/LandingP';
 import Contact from './src/screens/Contact';
+import AddBlogText from './src/screens/AddBlogText';
+import CustomCompo from './src/screens/CustomCompo';
 
 const navigator = createStackNavigator(
   {
@@ -14,11 +16,13 @@ const navigator = createStackNavigator(
     CrypF:CryptoCurrencies,
     LandEl:LandingP,
     contactEl:Contact,
+    AddBlohE2:AddBlogText,
+    ContactE2: CustomCompo,
   },
   {
     initialRouteName: 'Home',
     defaultNavigationOptions: {
-      title: 'Haz',
+      title: 'MAIN',
     },
   }
 );
