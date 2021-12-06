@@ -3,10 +3,10 @@ import { View, Text, StyleSheet, FlatList } from 'react-native';
 
 const AboutUs = () => {
   const Team = [
-    {name:'Ella' },
-    {name:'Fredrik ' },
-    {name:'Emair ' },
-    {name:'Khaled' }
+    {name:'Ella',key:'1'},
+    {name:'Fredrik ',key:'2'},
+    {name:'Emair ',key:'3'},
+    {name:'Khaled',key:'4'}
   ];
 
   return (
