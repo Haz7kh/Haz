@@ -35,6 +35,8 @@ const CryptoCurrencies = () => {
 
   const [textColor, setTextColor] = useState("");
   const setTextToWhite = () => setTextColor("#70A288");
+  // const [color, setColor] = useState([]);
+ 
 
   const convertCurrencies = () => {
     let dict = { ...currencies };
@@ -59,7 +61,7 @@ const CryptoCurrencies = () => {
   };
 
   const image = {
-    uri: "https://images.unsplash.com/photo-1585562125287-d748f3097a8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9uZXl8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60",
+    uri: "https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
   };
 
   const round = (numText) => {
@@ -152,13 +154,22 @@ const CryptoCurrencies = () => {
     </View>
   );
 };
+const randomRGB=()=>{
+  const red=Math.floor(Math.random()* 256);
+  const green=Math.floor(Math.random()* 256);
+  const blue=Math.floor(Math.random()* 256); 
+
+return `rgb(${red},${green},${blue});`
+
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#514F59",
+    
     justifyContent: "space-around",
     width:"100%",
+    backgroundColor:randomRGB(),
     
     
     padding: "20px",
@@ -195,11 +206,11 @@ const styles = StyleSheet.create({
   },
   bottom: {
     flex: 1,
-    padding: "10px",
+    padding: 10,
   },
   textStyle: {
     fontWeight: "bold",
-    fontSize: "2rem",
+    fontSize: 12,
   },
   button: {
     backgroundColor: "#70A288",

@@ -39,6 +39,14 @@ const CustomCompo = () => {
     </View>
   );
 };
+const randomRGB=()=>{
+  const red=Math.floor(Math.random()* 256);
+  const green=Math.floor(Math.random()* 256);
+  const blue=Math.floor(Math.random()* 256); 
+
+return `rgb(${red},${green},${blue});`
+
+};
 
 const compstyles = StyleSheet.create({
   papa: {
@@ -49,7 +57,7 @@ const compstyles = StyleSheet.create({
     height: "40%",
   },
   yungboi: {
-    backgroundColor: "#514F59",
+    backgroundColor: randomRGB(),
     width: "auto",
     height: "auto",
     justifyContent: "flex-start",

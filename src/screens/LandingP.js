@@ -15,6 +15,8 @@ import {
 
 import { useState } from "react"; //
 
+
+
 const LandingP = ({navigation}) => {
     const [name, setName] = useState("Name");
     const [email, setEmail] = useState("Email");

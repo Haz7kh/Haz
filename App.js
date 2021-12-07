@@ -8,6 +8,7 @@ import LandingP from './src/screens/LandingP';
 import Contact from './src/screens/Contact';
 import AddBlogText from './src/screens/AddBlogText';
 import CustomCompo from './src/screens/CustomCompo';
+import KlappaHund from './src/screens/KlappaHund';
 
 const navigator = createStackNavigator(
   {
@@ -18,6 +19,7 @@ const navigator = createStackNavigator(
     contactEl:Contact,
     AddBlohE2:AddBlogText,
     ContactE2: CustomCompo,
+    HundF:KlappaHund,
   },
   {
     initialRouteName: 'Home',

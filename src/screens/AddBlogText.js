@@ -25,12 +25,20 @@ const AddBlogText = () => {
     </View >
   );
 };
+const randomRGB=()=>{
+  const red=Math.floor(Math.random()* 256);
+  const green=Math.floor(Math.random()* 256);
+  const blue=Math.floor(Math.random()* 256); 
+
+return `rgb(${red},${green},${blue});`
+
+};
 
 const addBlog = StyleSheet.create({
   container: {
     width: "100%",
     height: "100%",
-    backgroundColor: "#514F59",
+    backgroundColor: randomRGB(),
     alignItems: "center",
     justifyContent: "center"
   },

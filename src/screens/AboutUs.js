@@ -11,7 +11,7 @@ const AboutUs = () => {
 
   return (
     <View>
-    <FlatList style={{marginLeft:5,marginTop:20,backgroundColor:"coral", height:50,width:150,borderWidth:1}}
+    <FlatList style={{marginLeft:5,marginTop:20,backgroundColor:randomRGB(), height:50,width:150,borderWidth:1}}
          data ={Team} 
          renderItem ={({item})=>{
           return(
@@ -25,6 +25,14 @@ const AboutUs = () => {
          }/>
          </View>
   );
+};
+const randomRGB=()=>{
+  const red=Math.floor(Math.random()* 256);
+  const green=Math.floor(Math.random()* 256);
+  const blue=Math.floor(Math.random()* 256); 
+
+return `rgb(${red},${green},${blue});`
+
 };
 
 
